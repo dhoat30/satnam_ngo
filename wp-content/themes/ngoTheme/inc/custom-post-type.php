@@ -68,6 +68,7 @@ function register_custom_type2(){
    //blogs post type
    register_post_type("programs", array(
       'show_in_rest' => true,
+      "has_archive" => true,
       "supports" => array("title", "page-attributes", 'editor'), 
       "public" => true, 
       "show_ui" => true, 

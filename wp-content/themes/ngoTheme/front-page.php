@@ -160,16 +160,16 @@ get_header();
 				<div class="blog_carousel owl-carousel curosel-style">
                     <?php 
 
-                    $argsSlider = array(
+                    $newsArg = array(
                         'post_type' => 'news',
                         'posts_per_page' => -1,
                         'post_status' => 'publish',
                             'orderby' => 'date', 
                             'order' => 'ASC'
                     );
-                    $slider = new WP_Query( $argsSlider );
-                    while($slider->have_posts()){
-                        $slider->the_post();
+                    $news = new WP_Query( $newsArg );
+                    while($news->have_posts()){
+                        $news->the_post();
                         ?>			
 					<div class="col-md-12">			
 						<div class="astute-single-blog_adn ">					
@@ -209,7 +209,76 @@ get_header();
 </div>
 <!-- News END -->
 
+<!-- CONTACT_AREA -->
+<div class="contact_area" id="contact">
+		<div class="container">		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title1  t_center">
+						<!-- title -->
+						<h2>Our Contact</h2>						
+						<!-- IMAGE -->
+						
+					</div>	
+				</div>	
+			</div>
+			<div class="row">
+                <?php
+				$contact = new WP_Query(array(
+                        'posts_per_page' => -1,
+                        'post_type' => 'contact_details'
+                    ));
 
+                    while($contact->have_posts()) {
+                        $contact->the_post(); 
+                        ?>
+				<div class="col-md-12 col-sm-12 col-xs-12 title-margin">
+					<div class="single_plases">
+						<div class="single_plases_inner">
+							<div class="plases_icon">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="plases_text">
+                                <a href="mailto:<?php echo get_field('email_');?>"><p><?php echo get_field('email_');?></p></a>
+							</div>
+						</div>
+					</div>
+                </div>		
+                    <?php
+                    }
+					wp_reset_postdata();
+					?>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="em_contact_form">
+					<form action="#">
+						<div class="contact_form_inner">
+							<div class="form_field">
+								<div class="form_field_inner">
+									<input type="text" name="name" placeholder="Name" />									
+								</div>
+								<div class="form_field_inner">
+									<input type="email" name="email" placeholder="Email" />									
+								</div>
+								
+								<div class="form_field_comment">
+									<div class="field_comment_inner">
+										<textarea name="comment" placeholder="Message" cols="30" rows="10"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact_bnt">
+							<button name="submit">submit</button>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <script>
         const slides = document.querySelectorAll('.slide');
