@@ -1,0 +1,37 @@
+/*
+    Theme Name: Satnam Ngo
+    Theme URI: https://webduel.co.nz
+    Author: Gurpreet Dhoat
+    Description: customized theme
+    version: 1.1
+*/
+
+@import 'assets/css/bootstrap.min.css'; 
+@import 'venobox/venobox.css'; 
+@import 'assets/css/nivo-slider.css'; 
+@import 'assets/css/animate.css'; 
+@import 'assets/css/themify-icons.css'; 
+/*@import 'assets/css/et-icon.css'; */
+@import 'assets/css/slick.css'; 
+@import 'assets/css/owl.carousel.css'; 
+@import 'assets/css/owl.transitions.css'; 
+@import 'assets/css/font-awesome.min.css'; 
+@import 'assets/css/meanmenu.min.css'; 
+@import 'assets/css/theme-default.css'; 
+@import 'assets/css/widget.css'; 
+@import 'assets/css/unittest.css'; 
+@import 'assets/css/responsive.css'; 
+@import 'assets/css/style.css'; 
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+    color:#3F3F3F;
+    font-family: 'Playfair Display', serif;
+  }
+ 
