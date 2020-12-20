@@ -4,9 +4,7 @@
     register_nav_menus( 
        array(
            "Main-navbar" => "Main Navbar",
-          'footer-useful-links' => 'Footer Useful Links',
-          'footer-category' => 'Footer Category', 
-          'footer-account-links' => 'Footer My Account'
+          'footer-useful-links' => 'Footer Help Links'
 
        )
        );  

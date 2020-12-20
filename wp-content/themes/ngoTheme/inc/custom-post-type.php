@@ -6,9 +6,9 @@
 
 add_post_type_support( "sliders", "thumbnail" ); 
 
-add_post_type_support( "special_cards", "thumbnail" ); 
-add_post_type_support( "product_categories", "thumbnail" );
-add_post_type_support( "shop-my-fav", "thumbnail" );
+add_post_type_support( "news", "thumbnail" ); 
+add_post_type_support( "events", "thumbnail" );
+add_post_type_support( "programs", "thumbnail" );
 add_post_type_support( "shop_by_brand", "thumbnail" );
 
 function register_custom_type2(){ 
@@ -30,58 +30,60 @@ function register_custom_type2(){
    ); 
 
    //loving post type
-   register_post_type("special_cards", array(
-      "supports" => array("title", "page-attributes"), 
+   register_post_type("news", array(
+      'show_in_rest' => true,
+      "has_archive" => true,
+      "supports" => array("title", "page-attributes", 'editor'), 
       "public" => true, 
       "show_ui" => true, 
       "hierarchical" => true,
       "labels" => array(
-         "name" => "Special Cards", 
-         "add_new_item" => "Add New Special Card", 
-         "edit_item" => "Edit Special Card", 
-         "all_items" => "All Special Cards", 
-         "singular_name" => "Special Card"
+         "name" => "News", 
+         "add_new_item" => "Add New News", 
+         "edit_item" => "Edit News", 
+         "all_items" => "All News", 
+         "singular_name" => "News"
       ), 
-      "menu_icon" => "dashicons-welcome-widgets-menus",
-      'taxonomies'          => array('category')
+      "menu_icon" => "dashicons-welcome-widgets-menus"
    )
    );
-
+   //news post type
+   register_post_type("events", array(
+      'show_in_rest' => true,
+      "has_archive" => true,
+      "supports" => array("title", "page-attributes", "editor"), 
+      "public" => true, 
+      "show_ui" => true, 
+      "hierarchical" => true,
+      "labels" => array(
+         "name" => "Events", 
+         "add_new_item" => "Add New Event", 
+         "edit_item" => "Edit Event", 
+         "all_items" => "All Events", 
+         "singular_name" => "Event"
+      ), 
+      "menu_icon" => "dashicons-welcome-write-blog"
+   )
+   );
    //blogs post type
-   register_post_type("blogs", array(
+   register_post_type("programs", array(
       'show_in_rest' => true,
       "supports" => array("title", "page-attributes", 'editor'), 
       "public" => true, 
       "show_ui" => true, 
       "hierarchical" => true,
       "labels" => array(
-         "name" => "Blogs", 
-         "add_new_item" => "Add New Blog", 
-         "edit_item" => "Edit Blog", 
-         "all_items" => "All Blogs", 
-         "singular_name" => "Blog"
+         "name" => "Programs", 
+         "add_new_item" => "Add New Program", 
+         "edit_item" => "Edit Program", 
+         "all_items" => "All Programs", 
+         "singular_name" => "Program"
       ), 
-      "menu_icon" => "dashicons-welcome-write-blog",
-      'taxonomies'          => array('category')
+      "menu_icon" => "dashicons-hammer"
    )
    );
 
-   //loving post type
-   register_post_type("product_categories", array(
-      "supports" => array("title", "page-attributes"), 
-      "public" => true, 
-      "show_ui" => true, 
-      "hierarchical" => true,
-      "labels" => array(
-         "name" => "Product Categories", 
-         "add_new_item" => "Add New Product Category", 
-         "edit_item" => "Edit Product Category", 
-         "all_items" => "All Product Categories", 
-         "singular_name" => "Product Category"
-      ), 
-      "menu_icon" => "dashicons-welcome-write-blog"
-   )
-   );
+   
    
    //shop by brand page post type
    register_post_type("contact_details", array(
@@ -111,20 +113,34 @@ add_action("init", "register_custom_type2");
 //custom taxonomy
 function wpdocs_register_private_taxonomy() {
    $args = array(
-       'label'        => __( 'favorite', 'textdomain' ),
+       'label'        => __( 'Programs Category', 'textdomain' ),
        'public'       => true,
        'rewrite'      => true,
        'hierarchical' => true
    );
    $argsSlider = array(
-      'label'        => __( 'hero-section-slider', 'textdomain' ),
+      'label'        => __( 'Slider Category', 'textdomain' ),
       'public'       => true,
       'rewrite'      => true,
       'hierarchical' => true
   );
+  $argsEvents = array(
+   'label'        => __( 'Events Category', 'textdomain' ),
+   'public'       => true,
+   'rewrite'      => true,
+   'hierarchical' => true
+);
+$argsNews = array(
+   'label'        => __( 'News Category', 'textdomain' ),
+   'public'       => true,
+   'rewrite'      => true,
+   'hierarchical' => true
+);
     
-   register_taxonomy( 'favorite', 'shop-my-fav', $args );
-   register_taxonomy( 'hero-section-slider', 'sliders', $argsSlider );
+   register_taxonomy( 'Programs Category', 'programs', $args );
+   register_taxonomy( 'news-category', 'news', $argsNews );
+   register_taxonomy( 'events-category', 'events', $argsEvents );
+   register_taxonomy( 'sliders', 'sliders', $argsSlider );
 }
 add_action( 'init', 'wpdocs_register_private_taxonomy', 0 );
 

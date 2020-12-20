@@ -19,7 +19,7 @@ require get_theme_file_path('/inc/nav-registeration.php');
 
  function liquorHut_scripts(){ 
    wp_enqueue_script("jquery");
-  // wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/f3cb7ab01f.js', NULL, '1.0', false);
+   wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/64b16a6c3b.js', NULL, '1.0', false);
    wp_enqueue_style("google-fonts", "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900", false);
  
    if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
@@ -27,8 +27,8 @@ require get_theme_file_path('/inc/nav-registeration.php');
       
     } else {
       wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'),  NULL, '1.0', true);
-      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.df1bd16dcca61ed9c491.js'), NULL, '1.0', true);
-      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.df1bd16dcca61ed9c491.css'));
+      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.6f69434ed1bb19d29500.js'), NULL, '1.0', true);
+      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.6f69434ed1bb19d29500.css'));
     }
     wp_localize_script("main", "liquorHutData", array(
       "root_url" => get_site_url(),
@@ -69,26 +69,7 @@ function mat_widget_areas() {
 
 add_theme_support("post-thumbnails");
 add_post_type_support( "boards", "thumbnail" ); 
-function register_custom_type(){ 
-   register_post_type("boards", array(
-      "supports" => array("title", "page-attributes", 'editor'), 
-      "public" => true, 
-      "show_ui" => true, 
-      "hierarchical" => true,
-      "labels" => array(
-         "name" => "Boards", 
-         "add_new_item" => "Add New Board", 
-         "edit_item" => "Edit Board", 
-         "all_items" => "All Boards", 
-         "singular_name" => "Note"
-      ), 
-      "menu_icon" => "dashicons-heart"
-      
-   )
-   ); 
-}
 
-add_action("init", "register_custom_type"); 
 
  //make private page parent/child
  add_filter("page_attributes_dropdown_pages_args", "my_attributes_dropdown_pages_args", 1, 1);
