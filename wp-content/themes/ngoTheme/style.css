@@ -82,3 +82,7 @@ html {
      height: 270px;
      object-fit: cover;
  }
+
+ .single-blog .container{
+     max-width: 750px;
+ }
