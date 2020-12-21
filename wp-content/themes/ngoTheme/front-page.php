@@ -373,7 +373,7 @@ get_header();
                     while($contact->have_posts()) {
                         $contact->the_post(); 
                         ?>
-				<div class="col-md-12 col-sm-12 col-xs-12 title-margin">
+				<div class="col-md-3 col-sm-12 col-xs-12 title-margin">
 					<div class="single_plases">
 						<div class="single_plases_inner">
 							<div class="plases_icon">
@@ -384,7 +384,19 @@ get_header();
 							</div>
 						</div>
 					</div>
-                </div>		
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 title-margin">
+					<div class="single_plases">
+						<div class="single_plases_inner">
+							<div class="plases_icon">
+								<i class="fab fa-facebook-f"></i>
+							</div>
+							<div class="plases_text">
+                                <a href="<?php echo get_field('facebook');?>"><p>Facebook</p></a>
+							</div>
+						</div>
+					</div>
+                </div>			
                     <?php
                     }
 					wp_reset_postdata();
@@ -394,7 +406,7 @@ get_header();
 			<div class="row">
 				<div class="col-md-12">
 					<div class="em_contact_form">
-					<form action="#">
+					<form action="https://fontawesome.com/icons/facebook-f?style=brands" id="contact-form">
 						<div class="contact_form_inner">
 							<div class="form_field">
 								<div class="form_field_inner">
@@ -413,7 +425,10 @@ get_header();
 						</div>
 						<div class="contact_bnt">
 							<button name="submit">submit</button>
-						</div>
+                        </div>
+                        <div class='success-message'>
+                            
+                        </div>
 					</form>
 					</div>
 				</div>

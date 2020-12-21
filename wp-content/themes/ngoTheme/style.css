@@ -86,3 +86,23 @@ html {
  .single-blog .container{
      max-width: 750px;
  }
+
+ .contact_area .row{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+ }
+
+ .success-message{ 
+ 
+   text-align: center;
+   margin-top: 20px;
+ }
+ .success-message-style{
+  color: white;
+ }
+ .error-message{
+  color: red;
+
+ }
