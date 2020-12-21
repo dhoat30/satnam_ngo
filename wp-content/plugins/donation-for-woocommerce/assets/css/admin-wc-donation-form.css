@@ -1,0 +1,534 @@
+.wc-donation-layout__1 div.notice, .wc-donation-layout__1 div.notice-warning, .wc-donation-layout__1 div.notice-success, .wc-donation-layout__1 div.error, .wc-donation-layout__1 div.updated {
+  display: none!important;
+}
+.wc-donation_page_general #wpcontent {
+  padding-right: 20px!important; 
+}
+.m-0 {
+  margin: 0!important;
+}
+.post-type-wc-donation #publish {
+  background-color: #6d36af!important;
+  border-color: #6d36af!important
+}
+.post-type-wc-donation .button,
+.post-type-wc-donation .button:hover,
+.post-type-wc-donation .button:focus,
+.post-type-wc-donation .button:active,
+.post-type-wc-donation a.page-title-action,
+.post-type-wc-donation a.page-title-action:hover,
+.post-type-wc-donation a.page-title-action:focus,
+.post-type-wc-donation a.page-title-action:active {
+  background-color: #6d36af;
+  color: #fff;
+  border: 1px solid #6d36af;
+}
+.post-type-wc-donation #post-preview {
+  background-color: #6d36af!important;
+  border-color: #6d36af!important;
+  color: #ffffff!important;
+}
+.post-type-wc-donation tr.type-wc-donation td .row-actions {
+  display: none!important;
+}
+.post-type-wc-donation table tr td:first-child {
+  width: auto!important;
+  height: 31px;
+}
+.post-type-wc-donation table {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: repeat(1, 1fr);
+  border: none!important;
+}
+.post-type-wc-donation table tbody tr {
+  background: #fff!important;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s ease 0s;
+}
+.post-type-wc-donation table tbody tr:hover {
+  -webkit-box-shadow: 4px 0 0px 0px rgb(109, 54, 175, 1) inset;
+  -moz-box-shadow: 4px 0 0px 0px rgb(109, 54, 175, 1) inset;
+  box-shadow: 4px 0 0px 0px rgb(109, 54, 175, 1) inset;
+  transition: all 0.5s ease 0s;
+}
+.post-type-wc-donation table thead tr th:nth-last-child(2) {
+  width: 250px!important;
+}
+.post-type-wc-donation table tr {
+  display: grid;
+  grid-template-rows: repeat(1, max-content);
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: auto;
+  align-items: center;
+  padding: 12px 0;
+}
+.post-type-wc-donation table thead tr {
+  background: #6d36af;
+  padding: 0;
+}
+.post-type-wc-donation table thead tr td, .post-type-wc-donation table thead tr th {
+  border: none!important;
+}
+.post-type-wc-donation table thead tr td, .post-type-wc-donation table thead tr th {
+  font-weight: bold;
+  color: #fff;
+}
+.post-type-wc-donation td.shortcode {
+  position: relative;
+}
+.post-type-wc-donation table tr td .wc-shortcode-field {
+  width: 250px!important;
+  height: 20px!important;
+  line-height: 1!important;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+.post-type-wc-donation td.shortcode > a {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  outline: none!important;
+  color: #6d36af;
+}
+
+.post-type-wc-donation td.shortcode > a:hover,
+.post-type-wc-donation td.shortcode > a:focus,
+.post-type-wc-donation td.shortcode > a:active {
+  outline: none!important;
+  color: inherit;
+}
+.wc-dashicons {
+  margin-right: 5px;
+  color: #6d36af;
+}
+.wc-dashicons:hover, .wc-dashicons:active, .wc-dashicons:focus {
+  color: inherit;
+}
+.wc-dashicons.deleteIcon {
+  color: #dc3232;
+}
+.post-type-wc-donation .widefat thead td input{
+  margin-top: 5px!important;
+}
+.post-type-wc-donation table tfoot {
+  display: none;
+}
+.wc-donation_page_general #submit {
+  padding: 10px;
+  min-width: 200px;
+  justify-content: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #6d36af;
+  border-color: #6d36af;
+}
+h1.wc-main-title {
+  font-size: 36px;
+  line-height: 1;
+  margin: 20px 0;
+}
+.sep20px{
+  clear:both;
+  height: 20px;
+}
+.wc-block-setting-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: max-content;
+}
+.wc-block-setting {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #f5f5f5;
+}
+.wc-grid-full {
+  grid-column: 1/-1;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: max-content;
+  grid-template-rows: repeat(1, max-content);
+}
+.wc-grid-full .wc-block-setting {
+  border:0!important;
+}
+.wc-text-label {
+  margin-left: 15px;
+}
+.wc-shortcode-field, .wc-shortcode-field:active, .wc-shortcode-field:focus, .wc-shortcode-field:hover {
+  border: 0!important;
+  width: 100%!important;
+  resize: none!important;
+  outline: none!important;
+  pointer-events: none!important;
+  box-shadow: none!important;
+  background: transparent!important;
+}
+.wc-button-primary, .wc-button-primary:hover, .wc-button-primary:active, .wc-button-primary:focus {
+  
+  display: block;
+  border: 1px solid #6d36af;
+  padding: 8px;
+  background: #6d36af;
+  color: #fff!important;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+.wc-uppercase {
+  text-transform: uppercase;
+}
+.wc-button-full {
+  width: 100%;
+  min-width: 100%;
+}
+.wc-donation-layout__main {
+  margin: 100px auto 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+.wc-donation-layout__1 {
+  background: #fff;
+  border-radius: 4px;
+  padding: 30px;
+  flex: 60%;
+}
+.wc-donation-layout__2 {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  flex: 40%;
+  margin-left: 20px;
+}
+.wc-donation-layout__1 h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: inherit;
+  color: #6d36af;
+  margin: 0 0 20px 0;
+}
+.wc-donation-layout__1 p {
+  text-align: left;
+  font-size: 16px;
+  font-family: inherit;
+  color: #000;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+.wc-donation-form, .wc-donation-widget-form, .wc-donation-round-form {
+  margin: 30px 0;
+}
+
+.wc-donation-form .button-primary, .wc-donation-widget-form .button-primary, .wc-donation-round-form .button-primary {
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.wc-donation-form #wc-danation-stored-values-compaign,
+.wc-donation-form #wc-donation-section-form-donation,
+.wc-donation-widget-form #wc-donation-widget-section-form-donation {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  max-width: 480px;
+}
+
+.wc-donation-form #wc-danation-stored-values-compaign + .select-wrapper,
+.wc-donation-form #wc-donation-section-form-donation + .select-wrapper,
+.wc-donation-widget-form #wc-donation-widget-section-form-donation + .select-wrapper {
+  margin-top: 30px;
+}
+
+.wc-donation-form .fa-plus,
+.wc-donation-widget-form .fa-plus {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.wc-donation-form .fa-plus:before,
+.wc-donation-widget-form .fa-plus:before {
+  content: "\f132";
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  transition: color .1s ease-in;
+  line-height: normal;
+}
+
+.wc-donation-form label[for="wc-domain-compaign-enable"] {
+  display: flex;
+  align-items: center;
+}
+
+.wc-donation-form .wc-donation-row-compaign,
+.wc-donation-form .wc-donation-row-donation,
+.wc-donation-widget-form .wc-donation-widget-row-donation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+.wc-donation-form .wc-donation-row-compaign span,
+.wc-donation-form .wc-donation-row-donation span,
+.wc-donation-widget-form .wc-donation-widget-row-donation span {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.wc-donation-form #wc-donation-form-compaign,
+.wc-donation-form #wc-donation-form-donation,
+.wc-donation-widget-form #wc-donation-widget-form-donation {
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+.wc-donation-form #wc-donation-form-compaign input,
+.wc-donation-form #wc-donation-form-donation input,
+.wc-donation-widget-form #wc-donation-widget-form-donation input {
+  height: 28px;
+  width: calc(100% - 59px);
+  margin-right: 5px;
+}
+
+.wc-donation-form .select-wrapper,
+.wc-donation-widget-form .select-wrapper,
+.wc-donation-round-form .select-wrapper {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.wc-donation-form .select-wrapper label,
+.wc-donation-widget-form .select-wrapper label,
+.wc-donation-round-form .select-wrapper label {
+  font-weight: bold;
+}
+
+.wc-donation-form .select-wrapper select, 
+.wc-donation-form .select-wrapper input[type="text"],
+.wc-donation-form .select-wrapper textarea,
+.wc-donation-widget-form .select-wrapper select, 
+.wc-donation-widget-form .select-wrapper input[type="text"],
+.wc-donation-widget-form .select-wrapper textarea,
+.wc-donation-round-form .select-wrapper select, 
+.wc-donation-round-form .select-wrapper input[type="text"],
+.wc-donation-round-form .select-wrapper textarea,
+.wc-donation-round-form .select-wrapper input[type="number"] {
+  display: block;
+  margin-top: 10px;
+  width: 100% !important;
+  max-width: unset;
+}
+.wc-donation-widget-form #display-donation-type {
+  display: none;
+}
+#wc-woo-shortcode {
+  background: #fff;
+  cursor: pointer;
+}
+
+.wc-donation-switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.wc-donation-switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.wc-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wc-slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 0px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-color: #6d36af;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid #6d36af;
+}
+
+.wc-donation-switch input:checked + .wc-slider {
+  background-color: #6d36af;
+}
+.wc-donation-switch input:checked + .wc-slider:before {
+  background: #fff;
+  border-color: #fff;
+  left: 10px!important;
+}
+.wc-donation-switch input:focus + .wc-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.wc-donation-switch input:checked + .wc-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.wc-donation-switch .wc-slider.round {
+  border-radius: 34px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.wc-donation-switch .wc-slider.round:before {
+  border-radius: 50%;
+}
+.wc-order-donation-completed {
+  color: #fff;
+  background: #6ACA25;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  line-height: 2.5em;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  margin: -.25em 0;
+  cursor: inherit!important;
+  white-space: nowrap;
+  max-width: 100%;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.wc-order-donation-failed {
+  color: #fff;
+  background: #FF0000;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  line-height: 2.5em;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  margin: -.25em 0;
+  cursor: inherit!important;
+  white-space: nowrap;
+  max-width: 100%;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.wc-donation-tabConainer .select-wrapper {
+  margin-bottom: 15px;
+}
+.wc-donation-tabConainer .select-wrapper label {
+  margin-right: 15px;
+}
+.wc-donation-tabConainer #tab-2 .select-wrapper label {
+  width: 180px;
+}
+.wc-donation-tabConainer #tab-3 .select-wrapper label {
+  width: 100px;
+}
+.select-wrapper input[type=radio]:checked::before,
+.select-wrapper input[type=checkbox]:checked::before {
+  background-color: #6d36af!important;
+}
+.wc-donation-tabConainer .select-wrapper select,
+.wc-donation-tabConainer .select-wrapper input[type="text"],
+.wc-donation-tabConainer .select-wrapper input[type="number"] {
+  max-width: 250px;
+  padding: 6px 15px;
+  min-width: 169px;
+  margin-bottom: 10px;
+}
+.select-wrapper input:active, 
+.select-wrapper input:focus,
+.select-wrapper input:hover {
+  outline: none!important;
+  box-shadow: none!important;
+}
+.wc-donation-label {
+  font-weight: 500;
+  min-width: 50px;
+  display: inline-block;
+}
+.pred-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0px 0px 3px #ccc;
+  position: relative;
+}
+a#pred-add-more {
+  border-radius: 4px;
+  text-decoration: none;
+  position: unset;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  color: #6d36af;
+  border: 1px solid #6d36af;
+  padding: 53px;
+}
+a#pred-add-more:active, a#pred-add-more:focus, a#pred-add-more:hover {
+  box-shadow: none;
+  outline: none;
+}
+div#wc-donation-predefined-wrapper,
+div#wc-donation-free-value-wrapper {
+  display: grid;
+  grid-template-rows: repeat(1, max-content);
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+.pred-delete {
+  position: absolute;
+  right: 12px;
+  top: 25px;
+  color: #dc3232!important;
+}
+.display-wrapper {
+  margin-bottom: 50px;
+}
+.wc-donation-error {
+  color: #ff0000;
+}

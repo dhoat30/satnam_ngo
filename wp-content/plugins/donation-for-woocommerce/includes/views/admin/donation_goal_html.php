@@ -1,0 +1,4 @@
+<?php 
+/**
+ * Donation goal HTML
+ */

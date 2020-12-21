@@ -106,3 +106,103 @@ html {
   color: red;
 
  }
+
+ /*donation*/ 
+ .wc-donation-in-action label:nth-child(1){ 
+   display: none !important;
+ }
+ .wc-donation-in-action .in-action-elements {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+}
+.wc-label-button:hover{
+
+  border: 2px solid black !important;
+ 
+}
+.wc-donation-f-submit-donation{
+  margin-top: 15px !important;
+  border: none;
+    display: block;
+    font-size: 14px !important;
+
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    background-color: #eb1b2b;
+    border-radius: 20px !important;
+    color: #fff;
+    padding: 13px 60px !important;
+    font-family: 'Montserrat', sans-serif;
+    outline: none !important;
+}
+.wc-donation-f-submit-donation:hover{
+    background-color: #fff !important;
+    border: 1px solid #eb1b2b !important;
+    border-radius: 20px !important;
+    color: #eb1b2b !important;
+}
+.donation-page input[type='text']{
+  height: 40px !important;
+  padding: 0 5px;
+}
+input:focus, button:focus {
+  border-color: red !important;
+  outline-color: red !important;
+}
+
+.donation-page .container{ 
+  max-width: 700px !important;
+}
+.donation-page .section-title1 h2{ 
+  color: black !important;
+  text-align: left;
+  margin: 0 !important;
+}
+.donation-page .section-title1{ 
+  margin: 0 !important;
+}
+
+
+/*cart */ 
+.product-remove a{ 
+  font-weight: 400 !important;
+}
+.checkout-button {
+  background: #eb1b2b !important;
+  font-weight: 400 !important;
+}
+.checkout-button:hover {
+  color: #eb1b2b !important;
+  background: white !important;
+  border: 1px solid #eb1b2b !important;
+}
+
+/*checkout */ 
+.donation-page  h3{ 
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+.woocommerce-billing-fields input{ 
+  display: block !important;
+  width: 100% !important;
+}
+.woocommerce-billing-fields input[type='email'], input[type='tel']{ 
+  display: block !important;
+  height: 40px !important;
+}
+.woocommerce-billing-fields input::placeholder{ 
+  color: rgb(145, 145, 145) !important;
+}
+.woocommerce-billing-fields label{ 
+  display: block !important;
+  
+  margin-top: 10px !important;
+}
+.select2-selection__rendered{ 
+  height: 50px !important;
+}
+
+#order_review_heading{
+  margin: 40px 0 10px 0;
+}

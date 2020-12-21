@@ -55,7 +55,7 @@
 								<li><a href="<?php echo get_site_url(); ?>#contact">Contact</a></li>
 							</ul>																						
 							<div class="donate-btn-header">
-								<a class="dtbtn" href="#">Donate Now</a>	
+								<a class="dtbtn" href="<?php echo get_site_url(); ?>/product/wc-donation-your-payment-options/">Donate Now</a>	
 							</div>				
 						</nav>				
 					</div>
