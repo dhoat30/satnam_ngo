@@ -42,6 +42,9 @@ html {
     background: #b3e6b3 !important;
 }
 
+.meanclose{
+  font-weight: 400 !important;
+}
 
  .section-title {
      margin-bottom: 50px !important;
@@ -60,7 +63,11 @@ html {
     }
 
   }
-
+.work-with img{
+  height: 50px;
+  display: inline-block;
+  margin: 0 5px 10px 5px;
+}
   .footer-middle .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -68,6 +75,7 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
  @media (max-width: 500px){
     .footer-middle .row {
       
@@ -163,7 +171,9 @@ input:focus, button:focus {
   margin: 0 !important;
 }
 
-
+.wc-donation-in-action{
+  margin-top: 20px;
+}
 /*cart */ 
 .product-remove a{ 
   font-weight: 400 !important;
@@ -205,4 +215,14 @@ input:focus, button:focus {
 
 #order_review_heading{
   margin: 40px 0 10px 0;
+}
+
+/*news and events*/ 
+.portfolio_area4 .em_load{ 
+  max-width: 900px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  margin: 0 auto;
 }

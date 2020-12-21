@@ -24,6 +24,22 @@
 						</div>
 					</div>
 				</div>	
+
+				<div class="col-sm-6 col-md-3 ">
+					<div class="widget widget_nav_menu">
+						<h2 class="widget-title">Working With</h2>
+						<div class="menu-quick-link-container">
+							<div class="work-with">
+								<img src="<?php echo get_site_url();?>/wp-content/uploads/2020/12/dn-logo.png" alt="Salvation Army">
+								<img src="<?php echo get_site_url();?>/wp-content/uploads/2020/12/logo-2.png" alt="Salvation Army">
+								<img src="<?php echo get_site_url();?>/wp-content/uploads/2020/12/secon_logo_inversed.png" alt="Salvation Army">
+								<img src="<?php echo get_site_url();?>/wp-content/uploads/2020/12/NZBlood-4col-resample.png" alt="Salvation Army">
+
+							</div>
+							
+						</div>
+					</div>
+				</div>	
                    
                    
 				

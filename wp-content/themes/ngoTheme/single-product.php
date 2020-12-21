@@ -17,7 +17,9 @@ get_header();
                         
                     </div>
                     <div>
-                        <?php the_content(); ?>
+                        <?php the_content(); 
+                            echo do_shortcode('[wc_woo_donation id="91"]');
+                        ?>
                     </div>
             <?php } 
             ?>

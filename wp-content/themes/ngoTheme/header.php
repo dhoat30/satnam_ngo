@@ -50,8 +50,8 @@
 								</li>
 								<li><a href="<?php echo get_site_url(); ?>#about-us">About</a></li>
 								<li><a href="<?php echo get_site_url(); ?>/program">Programs</a></li>								
+								<li><a href="<?php echo get_site_url(); ?>/news-events">News & Events</a></li>		
 								<li><a href="<?php echo get_site_url(); ?>/gallery">Gallery</a></li>
-												
 								<li><a href="<?php echo get_site_url(); ?>#contact">Contact</a></li>
 							</ul>																						
 							<div class="donate-btn-header">
@@ -71,30 +71,14 @@
 		<div class="menu_area mobile-menu">
 			<nav>
 				<ul class="main-menu clearfix">
-					<li><a href="index.html">Home</a>
-						<ul class="sub-menu">
-							<li><a href="index-2.html">Home 2</a></li>
-							<li><a href="index-3.html">Home 3</a></li>
-							<li><a href="index-onepage.html">Home OnePage</a></li>
-						</ul>																
-					</li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="project.html">Project</a></li>				
-					<li><a href="service.html">Service</a></li>
-					<li><a href="#">pages</a>
-						<ul class="sub-menu">
-							<li><a href="event.html">Event</a></li>
-							<li><a href="team.html">Team</a></li>										
-						</ul>
-					</li>
-					<li><a href="blog.html">Blog</a>
-						<ul class="sub-menu">
-							<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-							<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-							<li><a href="single-blog.html">Single Blog</a></li>
-						</ul>								
-					</li>								
-					<li><a href="contact.html">Contact</a></li>
+				<li><a href="<?php echo get_site_url(); ?>">Home</a></li>
+								<li><a href="<?php echo get_site_url(); ?>#about-us">About</a></li>
+								<li><a href="<?php echo get_site_url(); ?>/program">Programs</a></li>								
+								<li><a href="<?php echo get_site_url(); ?>/news-events">News & Events</a></li>		
+								<li><a href="<?php echo get_site_url(); ?>/gallery">Gallery</a></li>
+								<li><a href="<?php echo get_site_url(); ?>#contact">Contact</a></li>
+								<li><a href="<?php echo get_site_url(); ?>/product/wc-donation-your-payment-options/">Donation</a></li>		
+		
 				</ul>			
 			</nav>
 		</div>					
