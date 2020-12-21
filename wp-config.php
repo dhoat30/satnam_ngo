@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'satnam_ngo' );
+
 
 if(strstr($_SERVER['SERVER_NAME'], 'localhost')){
 	/** The name of the database for WordPress */
@@ -38,7 +38,7 @@ define( 'DB_HOST', 'localhost' );
 else{ 
 	define( 'DB_NAME', 'db9hyw5cgqk8mc');
 	define( 'DB_USER', 'u2ahnw9xfjqmx');
-	define( 'DB_PASSWORD', 'g3@$ldR@v2*5');
+	define( 'DB_PASSWORD', 'r3)~)l57e1^3');
 	define( 'DB_HOST', '127.0.0.1' );
 }
 
