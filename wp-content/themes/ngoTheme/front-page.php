@@ -209,6 +209,147 @@ get_header();
 </div>
 <!-- News END -->
 
+<!-- about area1 start -->
+<div class="about_area3" id="about-us">		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="section_title_lefts">
+						<h1>ABOUT US </h1>
+					</div>
+					<div class="about_text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitghj, sed do eiushhgmod tempor incididun ut labore eth dolore magna aliqua. Ut enim ad minim veniam, arquis nostrud exercitation uj laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupj velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidr sunt in culpa qui officia deserunt mollit anim</p>
+					<p>id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem ac doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et qu architector beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas t aspernatur aut odit aut fugit, sed quia consequuntur magni</p>					
+					</div>
+					<div class="about_singnature">
+						<img src="assets/images/sing.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class=" single_image">
+						<img src="https://www.diocesan.school.nz/uploads/438e1b010d2f63a107988b53ec189d2c.jpg" class="" alt="About Us"> 
+					</div>
+				</div>
+			</div>
+		</div>	
+</div>
+
+<!-- service_area -->
+<div class="team_area" id="team">
+		<div class="container">		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title  t_center">
+						<!-- title -->
+						<h2>Our Teammates</h2>						
+							<!-- IMAGE -->
+							
+							<!-- TEXT -->
+							<p class=" text-alignm">We are Thankful for our lovely and hard working team. </p>
+					</div>	
+				</div>	
+			</div>			
+			<div class="row">
+                <?php 
+
+                    $temaArgs = array(
+                        'post_type' => 'teammates',
+                        'posts_per_page' => -1,
+                        'post_status' => 'publish',
+                            'orderby' => 'date', 
+                            'order' => 'ASC'
+                    );
+                    $team = new WP_Query( $temaArgs );
+                    while($team->have_posts()){
+                        $team->the_post();
+                        ?>			
+				<!-- single team -->				
+				<div class="col-md-3 col-sm-6 col-xs-12">					
+					<div class="em-team ">
+						<div class="team-style-2">	
+							<div class="team-wrap">
+								<div class="team-front">
+									<div class="em-content-image-inner">	
+										<div class="em-content-image">
+											<img src="<?php echo get_the_post_thumbnail_url();?>" alt="">	
+										</div>	
+									</div>
+                                </div>
+                                
+        
+								<div class="team-back-wraper">
+									<div class="team-back">
+										<div class="em-content-waraper">
+											<div class="em-content-title-inner">
+												<div class="em-content-title">
+													<h2><?php echo get_the_title();?> </h2>
+												</div>							
+											</div>
+											<div class="em-content-subtitle-inner">
+												<div class="em-content-subtitle"><?php echo get_field('position');?> </div>							
+											</div>
+											<div class="em-content-desc-inner">
+												<div class="em-content-desc"><?php echo get_field('about_them');?></div>								
+											</div>
+											<div class="em-content-socials">
+                                                <?php if(get_field('facebook_profile')){
+                                                    ?>
+                                                    <a href="<?php echo get_field('facebook_profile')?>" target="_blank">
+                                                        <i class="fab fa-facebook-square"></i>
+												    </a>
+                                                    <?php
+                                                    }
+                                                    ?>
+
+                                                        <?php if(get_field('instagram_profile')){
+                                                    ?>
+                                                    <a href="<?php echo get_field('instagram_profile')?>" target="_blank">
+                                                        <i class="fab fa-instagram-square"></i>
+												    </a>
+                                                    <?php
+                                                    }
+                                                    ?>
+
+                                                    <?php if(get_field('twitter_profile')){
+                                                    ?>
+                                                    <a href="<?php echo get_field('twitter_profile')?>" target="_blank">
+                                                        <i class="fab fa-twitter-square"></i>
+												    </a>
+                                                    <?php
+                                                    }
+                                                    ?>
+
+                                                     <?php if(get_field('linkedin_profile')){
+                                                    ?>
+                                                    <a href="<?php echo get_field('linkedin_profile')?>" target="_blank">
+                                                        <i class="fab fa-linkedin"></i>
+												    </a>
+                                                    <?php
+                                                    }
+                                                    ?>
+												
+												
+												
+												
+											</div>						
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+                </div>
+                
+                <?php
+                    }
+                    wp_reset_postdata();
+
+                    ?>
+							
+			</div>
+		</div>
+	</div>
+		
 <!-- CONTACT_AREA -->
 <div class="contact_area" id="contact">
 		<div class="container">		

@@ -9,7 +9,7 @@ add_post_type_support( "sliders", "thumbnail" );
 add_post_type_support( "news", "thumbnail" ); 
 add_post_type_support( "events", "thumbnail" );
 add_post_type_support( "programs", "thumbnail" );
-add_post_type_support( "shop_by_brand", "thumbnail" );
+add_post_type_support( "teammates", "thumbnail" );
 
 function register_custom_type2(){ 
 
@@ -101,6 +101,24 @@ function register_custom_type2(){
       ), 
       "menu_icon" => "dashicons-location
       "
+   )
+   );
+
+    //blogs post type
+    register_post_type("teammates", array(
+      'show_in_rest' => true,
+      "supports" => array("title"), 
+      "public" => true, 
+      "show_ui" => true, 
+      "hierarchical" => true,
+      "labels" => array(
+         "name" => "Teammates", 
+         "add_new_item" => "Add New Teammate", 
+         "edit_item" => "Edit Teammate", 
+         "all_items" => "All Teammates", 
+         "singular_name" => "Teammate"
+      ), 
+      "menu_icon" => "dashicons-admin-users"
    )
    );
    

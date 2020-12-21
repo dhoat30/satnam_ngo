@@ -28,7 +28,9 @@
 
 
 
-
+html {
+    scroll-behavior: smooth;
+  }
 * {
     box-sizing: border-box;
     padding: 0; 
@@ -36,9 +38,17 @@
 
   }
 
+  .astute_nav_area {
+    background: #b3e6b3 !important;
+}
+
+
  .section-title {
      margin-bottom: 50px !important;
  }
+ .section-title1 {
+    margin-bottom: 50px !important;
+}
  .blog_area {
     padding: 0 0 0 !important;
 }
@@ -65,3 +75,10 @@
       }
  }
 
+
+ /*team */ 
+ .team-style-2 .em-content-image img{
+     width: 270px;
+     height: 270px;
+     object-fit: cover;
+ }

@@ -3,8 +3,8 @@
  function liquorhut_config(){ 
     register_nav_menus( 
        array(
-           "Main-navbar" => "Main Navbar",
-          'footer-useful-links' => 'Footer Help Links'
+           "main-navbar" => "Main Navbar",
+          "footer-useful-links" => 'Footer Help Links'
 
        )
        );  

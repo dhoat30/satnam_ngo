@@ -16,7 +16,7 @@ get_header();
 				<div class="col-md-12">
 					<div class="section-title  t_center">
 						<!-- title -->
-							<h2>Latest News</h2>						
+							<h2>Our Programs</h2>						
 							<!-- IMAGE -->
 							<!-- TEXT -->
 					</div>	

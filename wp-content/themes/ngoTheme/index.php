@@ -7,7 +7,14 @@ get_header();
             while(have_posts()){
                 the_post(); 
                 ?>
-                    <h1 class="lg-font-sz regular center-align"><?php the_title();?></h1>
+                    <div class="col-md-12">
+                        <div class="section-title  t_center">
+                            <!-- title -->
+                                <h2><?php the_title();?></h2>						
+                                <!-- IMAGE -->
+                                <!-- TEXT -->
+                        </div>	
+                    </div>
                     <div>
                         <?php the_content();?>
                     </div>
