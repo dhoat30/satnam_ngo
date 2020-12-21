@@ -33,7 +33,25 @@ define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
+if(strstr($_SERVER['SERVER_NAME'], 'localhost')){
+	/** The name of the database for WordPress */
+define( 'DB_NAME', 'satnam_ngo' );
 
+/** MySQL database username */
+define( 'DB_USER', 'root' );
+
+/** MySQL database password */
+define( 'DB_PASSWORD', 'root' );
+
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
+}
+else{ 
+	define( 'DB_NAME', 'dbgbccax5w6cs9');
+	define( 'DB_USER', 'uvnkgmbbwrkd3');
+	define( 'DB_PASSWORD', '1uqB^b63#17h');
+	define( 'DB_HOST', '127.0.0.1' );
+}
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
