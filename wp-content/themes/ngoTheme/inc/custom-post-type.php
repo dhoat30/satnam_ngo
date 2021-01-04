@@ -19,6 +19,7 @@ function register_custom_type2(){
       "supports" => array("title", "page-attributes",  "editor"), 
       "public" => true, 
       "show_ui" => true, 
+      'has_archive' => true,
       "hierarchical" => true,
       "labels" => array(
          "name" => "Achievements", 

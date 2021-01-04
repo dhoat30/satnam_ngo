@@ -5,7 +5,7 @@
     	Mobile Menu
     ------------------------*/
     $('.mobile-menu nav').meanmenu({
-        meanScreenWidth: "990",
+        meanScreenWidth: "1200",
         meanMenuContainer: ".mobile-menu",
         onePage: false,
     });
@@ -83,7 +83,7 @@
     });
 
     $(".nav_scroll > li:first-child").addClass("current");
-	
+
     /* sticky nav 1 */
     $('.one_page').scrollToFixed({
         preFixed: function() {
@@ -113,7 +113,7 @@
         delay: 10,
         time: 1000
     });
-	
+
     /* Portfolio Isotope  */
 
     $('.em_load').imagesLoaded(function() {
@@ -283,28 +283,29 @@
         easing: "swing",
         speed: 50
     });
-	
-	
-	
-	/*---------------------
-	 countdown
-	--------------------- */
-		$('[data-countdown]').each(function() {
-		  var $this = $(this), finalDate = $(this).data('countdown');
-		  $this.countdown(finalDate, function(event) {
-			$this.html(event.strftime('<span class="cdowns days"><span class="time-counts">%-D</span> <p>Days</p></span> <span class="cdowns hour"><span class="time-counts">%-H</span> <p>Hour</p></span> <span class="cdowns minutes"><span class="time-counts">%M</span> <p>Min</p></span> <span class="cdowns second"> <span><span class="time-counts">%S</span> <p>Sec</p></span>'));
-		  });
-		});	
-	
-	
+
+
+
+    /*---------------------
+     countdown
+    --------------------- */
+    $('[data-countdown]').each(function() {
+        var $this = $(this),
+            finalDate = $(this).data('countdown');
+        $this.countdown(finalDate, function(event) {
+            $this.html(event.strftime('<span class="cdowns days"><span class="time-counts">%-D</span> <p>Days</p></span> <span class="cdowns hour"><span class="time-counts">%-H</span> <p>Hour</p></span> <span class="cdowns minutes"><span class="time-counts">%M</span> <p>Min</p></span> <span class="cdowns second"> <span><span class="time-counts">%S</span> <p>Sec</p></span>'));
+        });
+    });
+
+
     // top quearys menu 
     var accoll = $(".panel-heading1");
     accoll.on('click', function() {
         accoll.removeClass('active');
         $(this).addClass('active');
-    });	
-	
-	
+    });
+
+
 
 
 

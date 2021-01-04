@@ -30,7 +30,7 @@ get_header();
                                                 while($slider->have_posts()){
                                                     $slider->the_post();
                                                     ?>
-                                            <div class="slide"  style='background: url("<?php echo get_the_post_thumbnail_url(null, 'full');?>") no-repeat;'>
+                                            <div class="slide" >
                                                     <?php 
                                                         if(get_field('button_text') || get_field('title') || get_field('subtitle')){
                                                             ?>
@@ -38,6 +38,8 @@ get_header();
                                                             <?php
                                                         }
                                                     ?>
+                                                    <img src="<?php echo get_the_post_thumbnail_url(null, 'full');?>" alt="">
+
                                                     <div class="content">
                                                         <div class="banner_content overflow-hidden">
                                                             <h2 class="em-slider-sub-title" data-animation="slideInLeft" data-animation-delay="0.5s"><?php echo get_field('title');?></h2>
@@ -462,7 +464,7 @@ while($team->have_posts()){
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 const auto = false; // Auto scroll
-const intervalTime = 50000;
+const intervalTime = 3000;
 let slideInterval;
 slides[0].classList.add('current');
 

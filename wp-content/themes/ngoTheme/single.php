@@ -10,7 +10,8 @@ get_header();
             while(have_posts()){
                 the_post(); 
                 $eventDate = new DateTime(get_field('event_date'));
-                $url = get_the_permalink();
+				$url = get_the_permalink();
+			
                 ?>
 			<div class="col-md-12  col-sm-12 col-xs-12 blog-lr">
 				<div class="astute-single-blog-details">
