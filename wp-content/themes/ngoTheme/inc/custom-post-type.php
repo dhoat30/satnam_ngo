@@ -10,8 +10,26 @@ add_post_type_support( "news", "thumbnail" );
 add_post_type_support( "events", "thumbnail" );
 add_post_type_support( "programs", "thumbnail" );
 add_post_type_support( "teammates", "thumbnail" );
+add_post_type_support( "achievements", "thumbnail" );
 
 function register_custom_type2(){ 
+    //achievements 
+    register_post_type("achievements", array(
+       'show_in_rest' => true,
+      "supports" => array("title", "page-attributes",  "editor"), 
+      "public" => true, 
+      "show_ui" => true, 
+      "hierarchical" => true,
+      "labels" => array(
+         "name" => "Achievements", 
+         "add_new_item" => "Add New Achievement", 
+         "edit_item" => "Edit Achievement", 
+         "all_items" => "All Achievements", 
+         "singular_name" => "Achievement"
+      ), 
+      "menu_icon" => "dashicons-shield"
+   )
+   );
 
    //sliders psot type
    register_post_type("sliders", array(

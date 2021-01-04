@@ -56,6 +56,30 @@ html {
     padding: 0 0 0 !important;
 }
 
+/*header logo*/ 
+.header-logo{
+  width: 100px;
+  position: absolute ;
+  top: -1px;
+}
+.mean-bar{
+  background-color: #b3e6b3 !important;
+}
+.mean-container .mean-nav {
+  background: #b3e6b3 none repeat scroll 0 0 !important;
+  float: none;
+}
+.mean-container .mean-bar::before {
+  color: #fff;
+  max-width: 10px !important;
+  transform: scale(0.06);
+  content: url("http://localhost/satnam_ngo/wp-content/uploads/2021/01/green-s-logo-High-Res-New-Zealand.png");
+  height: 10px !important;
+  font-weight: 700;
+  left: 10px;
+  position: absolute;
+  top: 0px;
+}
   /*slider*/ 
   @media (max-width: 600px){
     .em-slider-sub-title{
@@ -82,7 +106,19 @@ html {
         justify-content: flex-start;
       }
  }
-
+@media (max-width: 1800px){
+  .astute-main-menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: block !important;
+    opacity: 1 !important;
+  }
+  .mean-bar{
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
 
  /*team */ 
  .team-style-2 .em-content-image img{

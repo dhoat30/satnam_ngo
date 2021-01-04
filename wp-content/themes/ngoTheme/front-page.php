@@ -150,7 +150,7 @@ get_header();
 				<div class="col-md-12">
 					<div class="section-title  t_center">
 						<!-- title -->
-							<h2>Latest News</h2>						
+							<h2>Achievements & News</h2>						
 							<!-- IMAGE -->
 							<!-- TEXT -->
 					</div>	
@@ -161,7 +161,7 @@ get_header();
                     <?php 
 
                     $newsArg = array(
-                        'post_type' => 'news',
+                        'post_type' => 'achievements',
                         'posts_per_page' => -1,
                         'post_status' => 'publish',
                             'orderby' => 'date', 
@@ -170,6 +170,10 @@ get_header();
                     $news = new WP_Query( $newsArg );
                     while($news->have_posts()){
                         $news->the_post();
+                        ?>
+
+                        <?php 
+                        
                         ?>			
 					<div class="col-md-12">			
 						<div class="astute-single-blog_adn ">					
@@ -177,7 +181,17 @@ get_header();
 							<div class="blog_adn_thumb_inner">
 								<div class="astute-blog-thumb_adn ">
 									<a href="single-blog.html">
-										<img src="<?php echo get_the_post_thumbnail_url(null, 'medium');?>"  alt="blog1">
+                                        <?php 
+                                        if(get_field('link')){
+                                            ?>
+                                            <img src="<?php echo get_the_post_thumbnail_url(null, 'medium');?>"  alt="blog1">
+                                            <?php
+                                        }
+                                        else{
+                                           the_content();
+                                        }
+                                        ?>
+										
 									</a>
 									<div class="blog_add_icon">
 										<a href="single-blog.html"><i class="fa fa-link"></i></a>
@@ -235,68 +249,70 @@ get_header();
 </div>
 
 <!-- service_area -->
-<div class="team_area" id="team">
-		<div class="container">		
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title  t_center">
-						<!-- title -->
-						<h2>Our Teammates</h2>						
-							<!-- IMAGE -->
-							
-							<!-- TEXT -->
-							<p class=" text-alignm">We are Thankful for our lovely and hard working team. </p>
-					</div>	
-				</div>	
-			</div>			
-			<div class="row">
-                <?php 
+<?php 
 
-                    $temaArgs = array(
-                        'post_type' => 'teammates',
-                        'posts_per_page' => -1,
-                        'post_status' => 'publish',
-                            'orderby' => 'date', 
-                            'order' => 'ASC'
-                    );
-                    $team = new WP_Query( $temaArgs );
-                    while($team->have_posts()){
-                        $team->the_post();
-                        ?>			
-				<!-- single team -->				
-				<div class="col-md-3 col-sm-6 col-xs-12">					
-					<div class="em-team ">
-						<div class="team-style-2">	
-							<div class="team-wrap">
-								<div class="team-front">
-									<div class="em-content-image-inner">	
-										<div class="em-content-image">
-											<img src="<?php echo get_the_post_thumbnail_url();?>" alt="">	
-										</div>	
-									</div>
+$temaArgs = array(
+    'post_type' => 'teammates',
+    'posts_per_page' => -1,
+    'post_status' => 'publish',
+        'orderby' => 'date', 
+        'order' => 'ASC'
+);
+$team = new WP_Query( $temaArgs );
+while($team->have_posts()){
+    $team->the_post();
+    if($team->found_posts()){
+        ?>
+        <div class="team_area" id="team">
+        <div class="container">		
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title  t_center">
+                        <!-- title -->
+                        <h2>Our Teammates</h2>						
+                            <!-- IMAGE -->
+							
+                            <!-- TEXT -->
+                            <p class=" text-alignm">We are Thankful for our lovely and hard working team. </p>
+                    </div>	
+                </div>	
+            </div>			
+            <div class="row">
+               		
+                <!-- single team -->				
+                <div class="col-md-3 col-sm-6 col-xs-12">					
+                    <div class="em-team ">
+                        <div class="team-style-2">	
+                            <div class="team-wrap">
+                                <div class="team-front">
+                                    <div class="em-content-image-inner">	
+                                        <div class="em-content-image">
+                                            <img src="<?php echo get_the_post_thumbnail_url();?>" alt="">	
+                                        </div>	
+                                    </div>
                                 </div>
                                 
         
-								<div class="team-back-wraper">
-									<div class="team-back">
-										<div class="em-content-waraper">
-											<div class="em-content-title-inner">
-												<div class="em-content-title">
-													<h2><?php echo get_the_title();?> </h2>
-												</div>							
-											</div>
-											<div class="em-content-subtitle-inner">
-												<div class="em-content-subtitle"><?php echo get_field('position');?> </div>							
-											</div>
-											<div class="em-content-desc-inner">
-												<div class="em-content-desc"><?php echo get_field('about_them');?></div>								
-											</div>
-											<div class="em-content-socials">
+                                <div class="team-back-wraper">
+                                    <div class="team-back">
+                                        <div class="em-content-waraper">
+                                            <div class="em-content-title-inner">
+                                                <div class="em-content-title">
+                                                    <h2><?php echo get_the_title();?> </h2>
+                                                </div>							
+                                            </div>
+                                            <div class="em-content-subtitle-inner">
+                                                <div class="em-content-subtitle"><?php echo get_field('position');?> </div>							
+                                            </div>
+                                            <div class="em-content-desc-inner">
+                                                <div class="em-content-desc"><?php echo get_field('about_them');?></div>								
+                                            </div>
+                                            <div class="em-content-socials">
                                                 <?php if(get_field('facebook_profile')){
                                                     ?>
                                                     <a href="<?php echo get_field('facebook_profile')?>" target="_blank">
                                                         <i class="fab fa-facebook-square"></i>
-												    </a>
+                                                    </a>
                                                     <?php
                                                     }
                                                     ?>
@@ -305,7 +321,7 @@ get_header();
                                                     ?>
                                                     <a href="<?php echo get_field('instagram_profile')?>" target="_blank">
                                                         <i class="fab fa-instagram-square"></i>
-												    </a>
+                                                    </a>
                                                     <?php
                                                     }
                                                     ?>
@@ -314,7 +330,7 @@ get_header();
                                                     ?>
                                                     <a href="<?php echo get_field('twitter_profile')?>" target="_blank">
                                                         <i class="fab fa-twitter-square"></i>
-												    </a>
+                                                    </a>
                                                     <?php
                                                     }
                                                     ?>
@@ -323,7 +339,7 @@ get_header();
                                                     ?>
                                                     <a href="<?php echo get_field('linkedin_profile')?>" target="_blank">
                                                         <i class="fab fa-linkedin"></i>
-												    </a>
+                                                    </a>
                                                     <?php
                                                     }
                                                     ?>
@@ -331,14 +347,19 @@ get_header();
 												
 												
 												
-											</div>						
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>					
+                                            </div>						
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>					
                 </div>
+        <?php
+    }
+    ?>	
+    
+
                 
                 <?php
                     }
@@ -440,7 +461,7 @@ get_header();
         const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
+const auto = false; // Auto scroll
 const intervalTime = 50000;
 let slideInterval;
 slides[0].classList.add('current');
