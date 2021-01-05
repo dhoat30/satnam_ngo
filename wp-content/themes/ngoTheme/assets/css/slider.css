@@ -1,7 +1,12 @@
 .slider {
     position: relative;
-    height: auto;
+    height: 600px;
     width: 100%;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
 }
 
 .hero-overlay {

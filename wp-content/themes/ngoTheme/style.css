@@ -166,6 +166,10 @@ html {
     color: red;
 }
 
+.event_area {
+    padding: 0 0 70px !important;
+}
+
 
 /*donation*/
 
