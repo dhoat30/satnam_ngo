@@ -27,8 +27,8 @@ require get_theme_file_path('/inc/nav-registeration.php');
       
     } else {
       wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'),  NULL, '1.0', true);
-      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.f5c33dc2ad820f6d9249.js'), NULL, '1.0', true);
-      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.f5c33dc2ad820f6d9249.css'));
+      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.ed1aabd7dc540951105a.js'), NULL, '1.0', true);
+      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ed1aabd7dc540951105a.css'));
     }
     wp_localize_script("main", "liquorHutData", array(
       "root_url" => get_site_url(),
@@ -112,8 +112,12 @@ add_filter( 'pre_get_posts', 'fwp_home_custom_query' );
 
 function wpb_woo_my_account_order() {
 	$myorder = array(
-		
-		'orders'             => __( 'Donations', 'woocommerce' )
+    'dashboard'          => __( 'Dashboard', 'woocommerce' ),
+		'edit-account'       => __( 'Change My Details', 'woocommerce' ),
+		'orders'             => __( 'Donations', 'woocommerce' ),
+		'edit-address'       => __( 'Addresses', 'woocommerce' ),
+		'payment-methods'    => __( 'Payment Methods', 'woocommerce' ),
+		'customer-logout'    => __( 'Logout', 'woocommerce' ),
 	);
 
 	return $myorder;
