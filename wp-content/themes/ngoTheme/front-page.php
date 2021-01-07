@@ -30,7 +30,8 @@ get_header();
                                                 while($slider->have_posts()){
                                                     $slider->the_post();
                                                     ?>
-                                            <div class="slide" >
+                                            <div class="slide" style='background: url("<?php echo get_the_post_thumbnail_url(null, 'full');?>") no-repeat
+                                        center top/cover;'>
                                                     <?php 
                                                         if(get_field('button_text') || get_field('title') || get_field('subtitle')){
                                                             ?>
@@ -38,7 +39,6 @@ get_header();
                                                             <?php
                                                         }
                                                     ?>
-                                                    <img src="<?php echo get_the_post_thumbnail_url(null, 'full');?>" alt="">
 
                                                     <div class="content">
                                                         <div class="banner_content overflow-hidden">

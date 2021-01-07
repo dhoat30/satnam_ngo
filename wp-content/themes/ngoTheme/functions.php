@@ -27,8 +27,8 @@ require get_theme_file_path('/inc/nav-registeration.php');
       
     } else {
       wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/undefined'),  NULL, '1.0', true);
-      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.c6647ddcc1aef8bdfc38.js'), NULL, '1.0', true);
-      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.c6647ddcc1aef8bdfc38.css'));
+      wp_enqueue_script('main', get_theme_file_uri('/bundled-assets/scripts.e89c35c44771f27665cd.js'), NULL, '1.0', true);
+      wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.e89c35c44771f27665cd.css'));
     }
     wp_localize_script("main", "liquorHutData", array(
       "root_url" => get_site_url(),
@@ -120,6 +120,7 @@ function wpb_woo_my_account_order() {
 		'customer-logout'    => __( 'Logout', 'woocommerce' ),
 	);
 
-	return $myorder;
+  return $myorder;
+  
 }
 add_filter ( 'woocommerce_account_menu_items', 'wpb_woo_my_account_order' );
